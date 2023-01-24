@@ -26,11 +26,11 @@ const student = {
 
 student.printDetails= function printDetails(){
     
-console.log(`${this.firstName} ${this.lastName} is a student in class ${this.class}`);
+return(`${this.firstName} ${this.lastName} is a student in class ${this.class}`);
 
 }
 
-student.printDetails();
+console.log(student.printDetails());
 
 
 
@@ -53,10 +53,10 @@ const person ={
 
 person.printDetails = function printDetails(){
 
-    console.log(`${this.firstName} ${this.lastName} is a ${this.age} year old ${this.job} living in ${this.city}`);
+    return (`${this.firstName} ${this.lastName} is a ${this.age} year old ${this.job} living in ${this.city}`);
 
 }
-person.printDetails();
+console.log(person.printDetails());
 
 console.log('=============================================');
 
